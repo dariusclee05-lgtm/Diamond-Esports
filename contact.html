@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact / Sign Up - Diamond Esports</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@400;700&family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Diamond Esports</h1>
+  </header>
+
+</body>
+  <nav>
+    <a href="website.html">Home</a> |
+    <a href="contact.html">Contact / Sign Up</a>
+  </nav>
+
+  <main>
+    <h2>Contact & Player Sign Up</h2>
+    <form id="signup-form" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Account Info</legend>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="6">
+      </fieldset>
+
+      <fieldset>
+        <legend>Player Profile</legend>
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about your playstyle"></textarea>
+        <label for="team">Favorite Team</label>
+        <select id="team" name="team">
+          <option value="">-- Choose a team --</option>
+          <option>Team 1</option>
+          <option>Team 2</option>
+          <option>Team 3</option>
+          <option>Independent</option>
+        </select>
+        <label for="skill-level">Skill Level (1-10)</label>
+        <input id="skill-level" name="skill-level" type="number" min="1" max="10">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences & Contact</legend>
+        <p>Preferred contact method</p>
+        <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+        <label><input type="radio" name="contact-method" value="discord"> Discord</label>
+
+        <p>Subscribe</p>
+        <label><input type="checkbox" name="newsletter" value="weekly"> Weekly newsletter</label>
+        <label><input type="checkbox" name="alerts" value="match-alerts"> Match alerts</label>
+
+        <label><input type="checkbox" name="terms" required> I agree to the site terms</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback (optional)</legend>
+        <label for="feedback">Website feedback / Requests</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Tell us what you'd like to see"></textarea>
+      </fieldset>
+
+      <button type="submit">Create Account / Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diamond Esports. All Rights Reserved.</p>
+    <p>contact@diamondesports.com</p>
+    <p>Assignment due: (replace with your assignment due date)</p>
+  </footer>
+</body>
+</html>
